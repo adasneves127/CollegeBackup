@@ -1,0 +1,95 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243\\\large Dr. Thaya}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+Review for Exam:
+\begin{enumerate}
+    \item Introduction
+    \item Vectors
+    \item 1-D Motion
+    \item 2-D Motion
+    \item Force | Newton's Laws
+    \item Force | Applications
+    \item Work, Energy, Power
+    \item Conservation of Energy
+    \item Linear Momentum and Collisions
+\end{enumerate}
+
+\section*{Impulse and Collision}
+\subsection*{Terms}
+\begin{enumerate}
+    \item[] \textbf{Momentum}
+    \item[] \textbf{Impulse}
+    \item[] \textbf{Collisions}
+\end{enumerate}
+The linear momentum of an object of mass m with a velocity v is defined as:\\
+$\vec{p} = m\vec{v}$\\
+Momentum is related to Kinetic Energy: $KE = \frac{p^2}{2m}$\\
+In order to change the momentum of an object, a force must be applied. The time rate of change of momentm can be expressed as:\\
+$\frac{\Delta\vec{p}}{\Delta t} = \frac{m\vec{v}_f - m\vec{v}_i}{\Delta t}$\\
+$\frac{\Delta\vec{p}}{\Delta t} = m\frac{\vec{v}_f - \vec{v}_i}{\Delta t} = m\vec{a} = \vec{F}_{net}$\\
+This is the Original Statement of Newton's secpnd law.
+Also valid when the forces are not constant.\\
+\\
+When a single force acts on the object, there is an impulse delivered to the object.\\
+When the force is constant, the impulse is defined as the force $F$, multiplied by the duration of time $\Delta t$.\\
+$\vec{I} = \vec{F}\Delta{t}$\\
+\\
+\\
+\begin{equation*}
+    \frac{dp}{dt} = \vec{F}
+\end{equation*}\\
+\newpage
+Force varies during impulse:\\
+\begin{equation*}
+    \int_{t_i}^{t_f}\vec{F}dt
+\end{equation*}
+
+What is the relation between Impulse and Momentum?\\
+The theorem states that the impulse acting on the object is equal to the change in momentum of the object.\\
+$\vec{I} = \vec{F}\Delta t = \frac{\Delta \vec{p}}{\Delta t}\Delta t = \Delta \vec{p}$\\
+\vspace{2in}\\
+In a particular crash test, a car of mass 1500 kg collides with a wall with a velocity of 15 m/s and bounce back with a velocity 2.6m/s after the collision. If the collision lasts 0.150s, find the impulse caused by the collision and the average net force exerted on the car.\\
+$I = F \Delta T$
+\newpage
+\subsection*{Collisions}
+We use the term collision to represent an event during which two particles come close to each other and interact by means of forces.\\
+\begin{enumerate}
+    \item The time interval during which the velocity changes from its initial to final values is assumed to be short.
+    \item 
+\end{enumerate}
+Two particles which interact obey Newton's third law.\\
+$F_{21} + F{12} = 0$\\
+$m_1a_1 + m_2a_2 = 0$\\
+$m_1 \frac{dv_1}{dt} + m_2 \frac{dv_2}{dt} = 0$\\
+$\frac{d(m_1v_1)}{dt} + \frac{d(m_2v_2)}{dt} = 0$\\
+$\frac{dp_1}{dt} + \frac{dp_2}{dt} = 0$\\
+$\frac{d}{dt}(m_1v_1+m_2v_2) = 0$\\
+Conservation of Linear Momentum: Momentum is conserved during a collision.\\
+In an isolated system when a collision occurs, the momentum of the system is conserved.\\
+\begin{enumerate}
+    \item[-] An isolated system will have no external forces.
+\end{enumerate}
+
+This is known as the principle of conservation of momentum.\\
+In a simple form:\\
+The total momentum before a collision is equal to the total momentum after the collision.
+
+
+\begin{equation*}
+    m_{1}\vec{v}_{1i} + m_{2}+\vec{v}_{2i} = m_{1}\vec{v}_{1f } + m_{2}+\vec{v}_{2f}
+\end{equation*}
+\end{document}

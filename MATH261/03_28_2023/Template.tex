@@ -1,0 +1,51 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx, cleveref}
+\usepackage{../commands}
+
+\def\docTitle{MATH261\\\large Dr. Vignon Oussa}
+\def\docAuthor{Alex Dasneves}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+Equation of tangent line: $y - f(a) = f'(a)(x-a) \equiv y= f'(a)(x-a) + f(a) $\\
+How do we generalize this concept?\\
+\\
+Toy Example:\\
+$z = f(x,y) = x^2+y^2$\\
+$z = x^2+y^2$\\
+$x = -2$\\
+\\
+$z = y^2 + 4$\\
+$x = -2$\\
+Set \(y=t\)\\
+\\
+$r(t) = \langle{-2,t,t^2+4}\rangle$\\
+\\
+\\
+\\
+Let $z = f(x,y)$\\
+Let $P = (a, b, f(a,b))$ be a point on the graph of $f$\\
+Then, an equation for the tangent plane to this graph at $P$ is given as follows:\\
+$z-f(a,b) = \frac{df}{dx}(a,b)(x-a)+\frac{df}{dy}(y-a)$
+% Insert all text from board photo.
+\\
+\\
+\textbf{Ex}\\
+$f(x,y) = xe^{xy}$\\
+$P = (1.1, -0.1, f(1.1, 0.1))$\\
+$z - f(a,b) = \frac{d}{dx}f(a,b)(x-1) + \frac{d}{dy}f(y-a)$\\
+$\frac{d}{dx}f(a,b) = \frac{d}{dx}g(x)h(x) = g'(x)h(x) + h'(x)g(x) = e^{xy} + xye^{xy} \equiv e^{xy}(1 + xy)$\\
+$\frac{d}{dy}f(a,b) = xye^{xy}$\\
+$z - 0.2279 = $
+
+
+
+\end{document}

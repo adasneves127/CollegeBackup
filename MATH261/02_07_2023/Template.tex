@@ -1,0 +1,74 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{MATH261\\\large Dr. Vignon Oussa}
+\def\docAuthor{Alex Dasneves}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+$|a\cdot b\times c| = $ Volume of the polytope determined by $a, b, c$
+
+\textbf{Ex.}
+$
+\begin{bmatrix}
+    1&4&10\\
+    2&3&4\\
+    1&1&1
+\end{bmatrix}
+$
+
+Determinant: $1 \begin{bmatrix} 3&4\\1&1\end{bmatrix}- 4\begin{bmatrix} 2&4\\1&1\end{bmatrix} + 10\begin{bmatrix}2&3\\1&1\end{bmatrix}$
+
+Torque is a cross product of 2 vectors\\
+We consider a force $F$ acting on a rigid bodyat a point given by a position vector $r$\\
+Suppose you have a vector $r$, and a force $F$, applied at angle $\theta$. The torque relative to point $O$ is defined as:\\
+$t = r \times F$\\
+The torque measures the tendancy of the body to rotate about the origin. The direction of the torque indiates the axis of rotation.\\
+$\|t\| = \|r\|\|F\|\sin\theta$
+
+\textbf{Ex} A bolt is tightened by applying a 40N force to a 0.25m wrench, applied at an angle of $75^{\circ}$.\\
+Find the magnitude of the torque on the center of the bolt.\\
+$\|\tau\|=\|r\|\|F\|\sin{75^{\circ}}$
+$= 9.66 N.m$
+
+
+\section{\underline{Equation of Lines and Planes}}
+A line in the xy-plane is determined by a point of the line and a direction.\\
+\hspace*{0.5in} Built into the direction is the slope.\\
+$m = \frac{\Delta y}{\Delta x}$
+If $\Delta y = O$ and $\Delta x = A$, then the slope is the Tangent.\\
+Therefore, $m = \tan{\theta}$\\
+The slope of a 2D line is simply the tangent of the smaller positive angle between the line and the x axis.\\
+We can therefore rewrite the equation $y = mx + b$ into $y = \tan{\theta}x + b$\\
+At $\frac{\pi}{2}, \frac{-\pi}{2}$, the slope is undefined (Vertical Line)\\
+
+Likewise, in $\mathbb{R}^3$, a line, $L$,  is determined by a point $P_0 = (X_0, Y_0, Z_0)$ and a direction $v$.\\
+We can position our vector so that it's tail lands on $P_0$.\\
+Select randomly a point $P = (x, y, z)$, where $x, y, z$ are unknown, such that P belongs to the line $L$.\\
+Can we characterize what $x, y, z$ are?
+
+We can draw a vector $\overrightarrow{OP_0}$, such that the tail lands on the origin, and the head lies on $P_0$\\
+$\overrightarrow{P_0P}$ is a parallel vector $v$\\
+In other words, there exists some unknown scalar $t \in \mathbb{R}$ (Parameter), such that $\overrightarrow{P_0P}=tv$\\
+By the geometrix properties of vector addition, $\overrightarrow{OP} = \overrightarrow{OP_0} + tv$\\
+Vector $\overrightarrow{OP} = \langle x,y,z \rangle = \langle x_0, y_0, z_0\rangle + tv \equiv \langle x_0+at, y_0+bt, z_0+ct\rangle$\\
+Thus, in summary,\\
+$x = x_0 + at$,\\
+$y = y_0 + at$\\
+$z = z_0 + at$\\
+Parametric Equations of Line $L$\\
+
+\begin{equation*}
+    r(t) = \langle x_0+at, y_0+bt, z_0+ct\rangle
+\end{equation*}
+This is called the ``Vector Equation of $L$''
+
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{January 27\textsuperscript{th}, 2023}
+
+
+\begin{document}
+\maketitle
+\section*{Dot product}
+Say you have 2 vectors, $\vec{a}=2\hat{i}+3\hat{j}$, and $\vec{b}=-\hat{i}+2\hat{j}$\\
+What would the dot product be?\\
+\begin{equation*}
+\vec{a}\cdot\vec{b} = a_1b_1 + a_2b_2 + \cdots + a_nb_n
+\end{equation*}
+$\vec{a}\cdot\vec{b} = -2+6$, since $\hat{i} \cdot \hat{i} = 1$\\
+Therefore: $\vec{a}\cdot\vec{b} = 4$\\
+
+
+\section{Cross product}
+\textbf{The Cross product always results in a vector}
+\begin{equation*}
+    \vec{c} = \vec{a}\times\vec{b}
+\end{equation*}
+
+\begin{equation*}
+    |\vec{c}| = c = ab\sin\theta
+\end{equation*}
+
+\textbf{Right Hand Rule}\\
+If you point your hand in the direction of $\vec{a}$, and curl your fingers in the direction of $\vec{b}$, your thumb will point in the direction of $\vec{c}$\\
+    
+\textbf{NOTE}\\
+The cross product is not commutative, $\vec{a}\times\vec{b} \neq \vec{b}\times\vec{a}$\\
+$\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}$
+
+The cross product is distributive, however order does still mater.
+
+\subsection*{Derivative of vector cross product}
+\begin{equation*}
+    \frac{d}{dt}(\vec{a}\times\vec{b}) = \frac{d\vec{a}}{dt}\times\vec{b} + \vec{a}\times\frac{d\vec{b}}{dt}
+\end{equation*}
+Order still matters!\\
+
+\subsection*{Unit Vectors}
+\begin{itemize}
+    \item $\hat{i}\times\hat{i}=\hat{j}\times\hat{j}=\hat{k}\times\hat{k} = 0$
+    \item $\hat{i}\times\hat{j}=-\hat{j}\times\hat{i}=\hat{k}$
+    \item $\hat{i}\times\hat{j}=-\hat{j}\times\hat{i}=\hat{i}$
+    \item $\hat{k}\times\hat{i}=-\hat{i}\times\hat{k}=\hat{j}$
+\end{itemize}
+Signs are interchangeable\\\\
+$\hat{i}$ is the unit vector in the x direction\\
+$\hat{j}$ is the unit vector in the y direction\\
+$\hat{k}$ is the unit vector in the z direction\\
+
+\textbf{Ex.} Find $B\times A$ if $A = 2i+3j$ and $B = -i+2j$\\ 
+$(2i + 3j) \times (-i+2j) \equiv 2i\times(-i+2j) + 3j\times(-i+2j) \equiv (-2i^2+ 4k) + (6j^2 - 3k) \equiv -2i^2 +6j^2 + 1k \equiv 7k$\\
+
+
+    
+
+
+\end{document}

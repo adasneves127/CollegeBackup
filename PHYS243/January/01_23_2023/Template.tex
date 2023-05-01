@@ -1,0 +1,143 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{Monday, January 23\textsuperscript{rd}, 2023}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+Examples:
+\begin{itemize}
+    \item $160.0 \pm 0.1$cm | correct
+    \item $160 \pm 0.1$cm | incorrect
+    \item $160$ cm | incorrect
+    \item $160.0$ cm | incorrect
+    \item $163.3 \pm 0.1$cm | incorrect
+    \item $163.3 \pm \sigma x$ cm | correct
+    \item $160.0 \pm 0.1$ | incorrect
+\end{itemize}
+\section*{Rounding when Adding and Subtracting}
+\textbf{When adding or subtracting, round the result to the smallest number of decimal places of any term in the sum (or difference)}
+\\
+Ex. If someone measures a length of a rod and reports as 100cm and cuts a part of it and measured as 5.6cm, what is the length of the remaining part?
+\begin{itemize}
+    \item $100 - 5.6 = 94.4$cm | incorrect
+    \item $100 - 5.6 = 94$ cm | correct
+\end{itemize}
+
+Say the initial length has been changed to $100.00$cm, what is the length of the remaining part?
+\begin{itemize}
+    \item $100.00 - 5.6 = 94.4$cm | correct
+    \item $100.00 - 5.6 = 94.40$ cm | incorrect
+\end{itemize}
+
+General Rule: if $A$ has 3 decimal places and $B$ has 2 decimal places, then round to 2 decimal places when adding or subtracting, as $B$ has the smaller precision.
+
+\section*{Estimates -- Order of magnitude Calculations}
+In some cases an exact answer may be difficult or impossible.\\
+Due to mathematical reasons or limited information available.\\
+\textbf{APproximation based on a number of assumptions.\\May yield a good estimate}\\
+Order of magnitude (Based on powers of 10) approximations are commonly used.
+Estimate the number of cells un the human body.\\
+If 1 fL = $1 \times 10^{-15}$L, how many m\textsuperscript{$3$} in a fL?\\
+$1\times 10^{-15} \times \frac{0x001m^3}{1L} = 1*10^{-15} * \frac {1 \times 10^-3}{1L} = 1x10^{-18}m^3$\\
+$1*10^{-18}m^{3} \rightarrow 1\mu m^3$\\
+$1000 fL \rightarrow 1x10^{-18}m^3 x 1000$
+$= 1x10^{-15}m^3 \Rightarrow$ Volume of 1 cell\\
+Approximate a human:\\
+Make a box with dimensions 2m x 0.5m x 0.1m\\
+$2m \times 0.5m \times 0.1m \approx 0.1m^3$\\
+Number of cells:
+$\frac{V_{human}}{V_{cell}} \approx \frac{0.1m^3}{1*10^-15} \approx 0.1 * 10^15 \approx 10^{14}$\\
+Mr. Google says: 100 trillion cells in the human body.\\
+
+\section*{Trigonometry Review}
+$\sin\theta = \frac{O}{H}$\\
+$\cos\theta = \frac{A}{H}$\\
+$\tan\theta = \frac{O}{A}$\\
+$\cot\theta = \frac{A}{O}$\\
+$\sec\theta = \frac{H}{A}$\\
+$\csc\theta = \frac{H}{O}$\\
+Pythagorean Theorem: $A^2 + B^2 = C^2$\\
+\begin{itemize}
+    \item To find an angle, you need the inverse trig function.
+        For example: $\sin^{-1}(0.707) = 45^{\circ}$
+\end{itemize}
+Be sure that calculator is in correct mode.
+
+\section*{Coordinates}
+\subsection*{Cartesian}
+\begin{itemize}
+    \item $x$ is horizontal
+    \item $y$ is vertical
+    \item $z$ is depth
+\end{itemize}
+Points are labeled as $(x,y,[z])$\\
+\subsection*{Polar}
+\begin{itemize}
+    \item $r$ is the distance from the origin
+    \item $\theta$ is the angle from $\theta=0$
+\end{itemize}
+Points are labeled as $(r,\theta)$\\
+\subsection*{Conversions}
+\paragraph*{Polar to Cartesian}
+\begin{itemize}
+    \item $x = r\cos\theta$
+    \item $y = r\sin\theta$
+\end{itemize}
+\paragraph*{Cartesian to Polar}
+\begin{itemize}
+    \item $r = \sqrt{x^2 + y^2}$
+    \item $\theta = \tan^{-1}\left(\frac{y}{x}\right)$
+\end{itemize}
+
+\section*{Problem Solving Strategy}
+\begin{itemize}
+    \item Read the problem carefully
+    \item Draw a picture
+    \item Label Physical Quantities
+    \item Identify principals
+    \item Choose Equations
+    \item Solve Equations
+    \item Substitute Known Values
+    \item Check Answer
+\end{itemize}
+\newpage
+A car as it enters the highway changes its speed from 50 mph to 70 mph in 40s. What is the acceleration? (Assume the car travels in a straight line)\\
+
+\section*{Vectors vs Scaler}
+Vectors have magnitude and direction.\\
+Vectors are denoted as $\overrightarrow{A}$
+Scalars have magnitude only.\\
+
+\section*{Vector Addition and Subtraction}
+When they are in the same line, we can add/sub their magnitudes.
+
+To add 2 vectors, we can use the following method:
+Define 2 vectors, $\overrightarrow{AB}$ and $\overrightarrow{CD}$\\
+Translate $\overrightarrow{AB}$ to the origin.\\
+Translate $\overrightarrow{CD}$ to point $B$, such that $B$ is at the same position as $C$.\\
+The result is the vector $\overrightarrow{AD}$\\
+
+To subtract 2 vectors, we can use the following method:
+Define 2 vectors, $\overrightarrow{AB}$ and $\overrightarrow{CD}$\\
+Translate $\overrightarrow{AB}$ to the origin.\\
+Translate $\overrightarrow{CD}$ to point $B$, such that $B$ is at the same position as $C$.\\
+Rotate $\overrightarrow{CD}$ by $2\pi$\\
+The result is the vector $\overrightarrow{AD}$\\
+
+
+
+
+
+\end{document}

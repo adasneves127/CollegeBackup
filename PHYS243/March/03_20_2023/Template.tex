@@ -1,0 +1,217 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section*{Review}
+\begin{equation*}
+    \Sigma F = ma
+\end{equation*}
+\begin{equation*}
+    F_k=\mu_k N
+\end{equation*}
+\begin{equation*}
+    F_s=\mu_s N
+\end{equation*}
+
+$\Sigma F=ma$ toward the center:\\
+$F_c=m\cdot a_c$\\
+$A_c=\frac{v^2}{r}$
+
+\section*{Chapter 7, Work, Energy, and Power}
+\textbf{Power} is how fast you create energy\\
+
+Power, worl, and energy can be constructive, or destructive.
+
+\subsection*{Work done by a constant force}
+$W = \vec{F} \cdot \Delta \vec{x}$
+
+The work done by a constant force is given by this formula.\\This equation applies when the force is in the same direction as the displacement.\\
+Units: Newton * meter = Joule\\
+$J = N m = kg \cdot \frac{m^2}{s^2}$
+
+\subsection*{Work done by a Force acting at an Angle}
+$W = (F \cos \theta)\Delta x$\\
+Only the component in the direction of the displacement matters.
+
+
+Work can be positive or negative.\\
+Positive if the force and the displacement are in the same direction.\\
+Negative if the force and the displacement are in the opposite direction.\\
+
+\subsection*{Example:}
+A man cleaning a floor pulls a vacuum cleaner with a force of magnitude $F = 50.0N$ at an angle of $30.0^{\circ}$ with the horizontal. Calculate the work done by the force on the vacuum cleaner as the head is displaced $3.00m$ to the right.\\
+$W = (50.0 \cdot \cos 30.0^{\circ}) \cdot 3.00$\\
+$W = (\frac{\sqrt{3}}{2}) \cdot 3.00$\\
+$W = 130.J$
+
+\subsection*{Quick Method:}
+The work can be represented by the dot product betweein the Force vector, and the displacement vector.\\
+$W = \vec{F} \cdot \Delta \vec{X} \equiv \vec{F} \Delta \vec{x} \cos\theta$\\
+
+\subsection*{Example: Dot Product}
+$\vec{A} = 2\hat{i} + 3\hat{j}$\\
+$\vec{B} = -\hat{i} + 2\hat{j}$\\
+$A\cdot B = \|A\|\|B\|\cos\theta$\\
+$A\cdot B = -2 + 6 = 4$\\
+$\|A\| = \sqrt{13}$\\
+$\|B\| = \sqrt{5}$\\
+$\frac{4 = 8.06 \cos\theta}{8.06}$\\
+$\frac{4}{8.06} = \cos\theta$\\
+$\arccos\frac{4}{8.06} = \theta$\\
+$\theta = 60.2$
+
+
+If we are pulling an object with a varying force, then the work done is the integration of that curve, with resepect to time.
+\large\\$W \approx \Sigma_{x_i}^{x_f} F_x\Delta x$\\
+--OR--\\
+$W = \int_{x_i}^{x_f}F_xdx$
+
+$5 * 4 + \frac{1}{2}5 * 2 = 20 + 5 = 25J$
+
+\section*{Kinetic Energy}
+$K.E. = \frac{1}{2}mv^2$\\
+Kinetic Energy can be used to do work.\\
+Ex. The moving hammer has kinetic energy and can do work on the nail.
+
+\subsection*{Work-Kinetic Energy Theorem}
+When work is done by a net force on an object, and the only change is it's speed, the work done is equal to the change in the object's kinetic energy.\\
+$W_{net} = KE_f-KE_i = \Delta KE$
+
+\textbf{Problem:}\\
+A $6.0 kg$ block initially at rest is pulled to the right along a frictionless, horizontal survace by a constant forizontal force of $12N$. Find the block's speed after it has been moved $3.0m$\\
+$W = F\Delta x \equiv W = 12 * 3 = 36J$\\
+$KE = \frac{1}{2}mv^2 \equiv 36J = \frac{1}{2}mv^2 = \frac{1}{2}6.0kg * v^2 = 3.0 v^2 $\\
+$\frac{36}{3} = v^2 \equiv \sqrt{12} = \sqrt{v^2} \equiv 3.46 = v \approx v = 3.5$
+
+
+\subsection*{Power}
+Average:
+$\bar{P} = \frac{\Delta W}{\Delta p} $\\
+Instant:
+$P = \frac{dW}{dT}$\\
+$W = \frac{J}{s} = \frac{km * m^2}{s^3}$\\
+$hp = 746W$\\
+
+Units of Energy defined in terms of units of power:
+kWh -- Kilowatt hour -- Unit often used on power bills
+
+
+\subsection*{Potential Energy}
+Potential Energy is associated with the position of the object within some system.\\
+Examples:\\
+\begin{itemize}
+    \item Gravitational
+    \item Spring
+    \item Magnetic
+    \item Electrical
+\end{itemize}
+
+The enery associated with the relative position of an object in space near the Earth's surface. If an object of mass $m$ is at a height $y$, then the GPE is given as:\\
+$PE = mgy$\\
+Work and Potential Energy:\\
+Evaluating the difference of the PE at any 2 points in a object's path gives the negative work done by the gravitational force between those 2 points.\\
+\\
+\textbf{Conservative Forces}: Work and enery associated with the force can be recovered\\
+Ex. Gravity, Springe Force, Electromagnetic Forces\\
+\textbf{Non-conservative Forces}: The forces are generally dissipative and work done against it cannot easily be recovered.\\
+Ex. Friction force, Air drag, Propulsive forces\\
+
+A force is conservative if the work it does on an object moving between 2 points is independent of the path the objects take between the points. Any conserv\dots
+
+
+\subsection*{Relationship between Conservative Forces and Potential Energy}
+\begin{itemize}
+    \item For conservative forces, the work is independent of the path
+    \item For such a system, we can define a potential energy function $U$
+    \begin{itemize}
+        \item The work done within a system by the conservative force equals the negative change in the potential energy of a system\\
+        \begin{equation*}
+            W_{int} = \int_{x_i}^{x_f}F_xdx = -\Delta{U}
+        \end{equation*}
+        \begin{equation*}
+            \Delta U = U_f-U_i = -\int_{x_i}^{x_f}F_xdx
+        \end{equation*}
+        \item The conservative force is related to the potential energy function through\\
+        \begin{equation*}
+            F_x = -\frac{dU}{dx}
+        \end{equation*}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Work done by Non-conservative forces}
+When non-conservative forces are present, the total mechanical energy of the system is \textit(not) constant.\\
+\\
+The work done by all non-conservative forces acting on parts of a system equals the change in the mechanical energy of the system\\
+\begin{equation*}
+    W_{nc} = (KE_f-KE_i)+(PE_f-PE_i)
+\end{equation*}
+
+\subsection*{Elastic Potential Energy}
+Elastic Potential Energy is related to the work required to compress a spring from its equilibrim, position to some final, arbitrary, position x
+\begin{equation*}
+    PE_s = \frac{1}{2}kx^2
+\end{equation*}
+Where $k$ is the spring constant.
+\begin{enumerate}
+    \item The spring is in equilibrium, neither stretched nor compressed.
+    \item The spring is compressed, storing potential Energy
+    \item The block is released and the postential energy is transformed to kinetic energy of the block
+\end{enumerate}
+
+\begin{equation*}
+    W_{nc} = (KE_f-KE_i)+(PE_f-PE_i)+(PE_{sf}-PE_{si})
+\end{equation*}
+\begin{equation*}
+    F_s = -\frac{dU}{dx} = -kx
+\end{equation*}
+This is called Hooke's Law\\
+\\
+\textbf{Example}\\
+A spring is hung vertically and an object of mass $m$ is attached to it's lower end. Under the action of the 'load' $mg$, the spring stretches a distance $d$ from its equilibrium position.\\
+
+\begin{enumerate}
+    \item If a spring is stretched by 2.0 cm by a suspended ofbect having mass of 0.55 kg, what is the force constant of the spring?
+\end{enumerate}
+
+\begin{equation*}
+    \vec{F_s} + mg = 0 \rightarrow F_s - mg = 0 \rightarrow F_s = mg
+\end{equation*}
+\begin{equation*}
+    f = \frac{mg}{d} = \frac{(0.55)(9.80)}{2.0 \times 20^{-2}} \equiv 2.7 \times 10^2
+\end{equation*}
+
+How much work is done over the distance we stretch by?
+\begin{equation*}
+    W = \frac{1}{2}kd^2 \equiv -5.4 \times 10^{-2}J
+\end{equation*}
+
+\subsection*{Conservation of Energy}
+We can neither create nor destroy energy, only transfered from one form or another.\\
+Another way of saying; Energy is conserved.\\
+
+\subsection*{Conservation of Mechanical Energy}
+In any isolated system of objects interacting only through conservative forces, the total mechanical energy of the system remains constant.\\
+\begin{equation*}
+    KE_i + PE_i = KE_f + PE_f
+\end{equation*}
+
+A 3.00 kg crate slides down a ramp. The ramp is 1.00m in length and inclined at an angle of 30.0 deg. The crate starts from rest at the top, experiences a constant friction force of magitude 5.00N and continues to move a short distance on the horizontal floor after it leaves the ramp.\\
+\begin{enumerate}
+    \item Use energy methods to determine the speed of the crate at the bottom of the ramp.
+    \item How far does the crate slive on the horizontal floor if it continues to experience a friction force of magnitude 5.00N?
+\end{enumerate}
+
+\end{document}

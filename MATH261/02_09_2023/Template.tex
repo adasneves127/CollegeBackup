@@ -1,0 +1,91 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{MATH261\\\large Dr. Vignon Oussa}
+\def\docAuthor{Alex Dasneves}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+A plane in space \(\mathbb{R}^3\) is characterized by a point $P_0 = (X_0, Y_0, Z_0)$ and a normal vector $n=\langle a,b,c\rangle $\\
+Let $P=(X,Y,Z)$, be an arbitrary point on the plane P.\\
+Since $n\perp P$, then: $\overrightarrow{P_0P} \perp n$.\\
+We can then say: $\langle X-X_0, Y-Y_0, Z-Z_0\rangle \perp \langle a,b,c \rangle$\\
+Therefore, $\langle X-X_0, Y-Y_0, Z-Z_0\rangle \cdot \langle a,b,c \rangle = 0$\\
+$a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$\\
+
+$$\overrightarrow{P_0P}\cdot{n} = 0$$
+This is the vector equation of a Plane $P$
+
+\textbf{Example}
+Suppose we want to find an equation of the plane passing through $P_0 = (2,3,5)$ and a normal vector $n = \langle 1,2,-1\rangle$\\
+Write down all 3 equations of the line at which this plane meet the x-y plane.\\
+$1(x-2)+2(y-3)-1(z-5) = 0$\\
+$x-2 + 2y-6-z+5 = 0 \equiv x + 2y - z -2 -6-5 = 0 \equiv x + 2y + z - 3 = 0 \equiv x + 2y-3 = 3$\\
+$z = x + 2y - 3$\\
+Eq 1. $x + 2y-3 = 3$\\
+
+$(0,0,0)$ is a point on the xy-plane\\
+$\langle 0,0,1\rangle$ is normal to the xy plane.
+Therefore:
+$0(x-0)+0(y-0)+1(z-0) = 0 \equiv z=0$\\
+Substitute Z into the other equations.\\
+We get:\\
+$x = x\\y = \frac{-x+3}{2}\\z = 0$\\
+$r(t) = \overrightarrow{OP_0} + tv$\\
+Where $P_0$ is a point on L, and v is a direction.\\
+\\
+Set $t=0$. We would get: $p=0,\frac{3}{2},0$. Therefore, $\overrightarrow{OP_0} = \langle 0, \frac{3}{2}, 0\rangle$\\
+next, set $t=1$. We get:  $P_1 = (1, 1, 0)$. The direction is equal to: $v = \overrightarrow{P_0P} = \langle 1, -\frac{1}{2}, 0\rangle$. We get this by subracting the 2 vectors\\
+Finally, we get:
+$r(t) = \langle0,\frac{3}{2},0\rangle + t\langle1, -\frac{1}{2}, 0\rangle = \langle0,\frac{3}{2}, 0 \rangle+ \langle t, -\frac{1}{2}, 0\rangle = \langle t, \frac{3-t}{2}, 0\rangle$\\
+
+3rd equation is: Symmetric Equations.\\
+$\frac{x-0}{1} = \frac{y-0}{-1/2} = \frac{3-0}{0}$\\
+Since this has a number divided by zero, there are NO symmetric equations.\\
+
+\textbf{Ex.}\\
+$P = (6, 0, 0)$\\
+$Q = (0, 3, 0)$\\
+$R= (0, 0, 3)$\\
+
+Find an equation of the unique plane passing through $PQR$\\
+$n = \overrightarrow{PR} \times \overrightarrow{PQ}$\\
+$= \langle -6, 0, 3\rangle \times \langle -6,3,0 \rangle$\\
+$\begin{bmatrix}
+    i&j&k\\
+    -6&0&3\\
+    -6&3&0
+\end{bmatrix}$\\
+$= \langle -9, -18, -18\rangle \equiv -9\langle{1,2,2}\rangle$\\
+A normal vector for plane $P$ is given by $\langle{1,2,2}\rangle, and a point is: (6,0,0)$\\
+Equation: $1(x-6)+2(y-0)+2(z-0)=0 \Leftrightarrow x+sy+2z-6=0 \Leftrightarrow x+2y+2z=6$\\
+
+\textbf{Remarks}\\Two planes are parallel iff their normal vectors are parallel to each other\\
+\textbf{Ex.} Planes:\\
+$x + y + z = 5$ \\
+and\\
+$3x+3y+3z=-17$
+are parallel to eachother.\\
+$n_1 = \langle <1,1,1> \rangle, n_2=\langle3,3,3\rangle$\\
+$n_1=3\langle{1,1,1}\rangle = 3n_1$.
+
+Suppose we have a plane with an equation $x+2y+z=1$, and we have a point $P = (2, 3, 1)$\\
+Find the distance between Plane $P$ and point $P$\\
+$n = \langle{1,2,1}\rangle$\\
+To find a point on the graph, we need to find 3 poings which satisfy the equation.
+Point $Q = (0,0,1)$ belongs to Plane $P$\\
+$\overrightarrow{QP} = \langle{2-0,3-0,1-1}\rangle = \langle{2,3,0}\rangle$
+$proj_n\overrightarrow{QP}=(\overrightarrow{QP}\cdot e_n)e_n$\\
+$\|proj_n\overrightarrow{QP}\| = \|(\overrightarrow{QP}\cdot e_n)e_n\|$\\
+%Insert image of board here:
+
+
+\end{document}

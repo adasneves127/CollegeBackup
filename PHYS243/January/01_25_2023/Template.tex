@@ -1,0 +1,94 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{Wednesday, January 25\textsuperscript{th}, 2023}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section*{Vector Components}
+\begin{equation*}
+    \overrightarrow{A}_x = \overrightarrow{A}\cos\theta
+\end{equation*}
+
+\begin{equation*}
+    \overrightarrow{A}_y = \overrightarrow{A}\sin\theta
+\end{equation*}
+When we draw components in Physics, we draw them as a vector, with dashed lines.\\
+Cosine is always on the side with the given $\theta$ angle. $\rightarrow V_x$\\
+Components are always perpendicular to each other.\\
+Components are always less than $\lVert \overrightarrow{v} \rVert$.\\
+\begin{equation*}
+    \overrightarrow{A} = \overrightarrow{A}_x + \overrightarrow{A}_y
+\end{equation*}
+\begin{equation*}
+    \tan\theta = \frac{\overrightarrow{A}_y}{\overrightarrow{A}_x}
+\end{equation*}
+
+If $F = 75$, and $\theta = 30^{\circ}$
+
+$F_x = 75 * \cos(30) = 64.95N \equiv 65N$\\
+
+$F_y = 75 * \sin(30) = 37.5N \equiv 38$\\
+
+Only adjust sigfigs at the end of calculations. 
+
+\section*{Vector Multiplication}
+\subsection*{Dot Product (Scalar Multiplication)}
+\begin{equation*}
+    \overrightarrow{A} \cdot \overrightarrow{B} = \lVert \overrightarrow{A} \rVert \lVert \overrightarrow{B} \rVert \cos\theta
+\end{equation*}
+
+\subsection*{Unit Vector}
+3 Unit vectors in 3d Space are as follows:
+\begin{itemize}
+    \item[x] $\hat{i}$
+    \item[y] $\hat{j}$
+    \item[z] $\hat{k}$ 
+\end{itemize}
+If we dot multiply a unit vector by itself, we get 1.\\
+If we dot multiply a unit vector by a different unit vector, we get 0.\\
+
+Unit vectors can be written in matrix form as follows:\\
+$\hat{i}$: $
+    \begin{bmatrix}
+        1 \\
+        0 \\
+        0
+    \end{bmatrix}
+$\\
+$\hat{j}$: $
+    \begin{bmatrix}
+        0 \\
+        1 \\
+        0
+    \end{bmatrix}
+$\\
+$\hat{k}$: $
+    \begin{bmatrix}
+        0 \\
+        0 \\
+        1
+    \end{bmatrix}
+$\\
+
+Vectors $a$ and $b$ can be written as:
+$\overrightarrow{A} = A_x\hat{i}+A_y\hat{j}+A_z\hat{k}$
+$\overrightarrow{b} = B_x\hat{i}+B_y\hat{j}+B_z\hat{k}$
+Multiplying these two vectors gives us:
+\begin{equation*}
+    \overrightarrow{A} \cdot \overrightarrow{B} = (A_x\hat{i}+A_y\hat{j}+A_z\hat{k}) \cdot (B_x\hat{i}+B_y\hat{j}+B_z\hat{k})
+\end{equation*}
+$=A_x\hat{i} \cdot (B_x\hat{i}+B_y\hat{j}+B_z\hat{k}) + A_y\hat{j} \cdot (B_x\hat{i}+B_y\hat{j}+B_z\hat{k}) + A_z\hat{k} \cdot (B_x\hat{i}+B_y\hat{j}+B_z\hat{k})$\\
+$=A_xB_x + A_yB_y + A_zB_z$\\
+
+\end{document}

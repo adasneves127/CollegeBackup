@@ -1,0 +1,42 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section*{2D Motion}
+We will study about vectors and then use the properties of vectors to simplofy 2D problems into 2 independent 1D problems.
+\begin{equation*}
+	\vec{v} \equiv \lim_{\Delta t}\to{0} \frac{\Delta\vec{r}}{\Delta{time}} = \frac{d\vec{r}}{dt}
+\end{equation*}
+
+\begin{equation*}
+	\vec{a}_{avg} \equiv \frac{\vec{v}_f-\vec{v}_{i}}{t_f-t_i} = \frac{\Delta \vec{v}}{\Delta{t}}
+\end{equation*}
+
+\subsection*{Projectile}
+\textbf{Definition:} Range is defined as the distance that a projectile can travel.\\
+If we ignore air resistance, then the horizontal component stays constant throughout the motion.
+
+Range:\\
+\begin{equation*}
+	\Delta{x}=\frac{v_0^2\sin{2}\theta_0}{g}
+\end{equation*}
+
+Max Height:\\
+\begin{equation*}
+	\Delta y = \frac{v_0^2\sin^2\theta_0}{2g}
+\end{equation*}
+
+\end{document}

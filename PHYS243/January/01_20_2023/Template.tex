@@ -1,0 +1,97 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{Friday, January 20\textsuperscript{th}, 2023}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{Review from Wednesday}
+\subsection*{Physical Quantities}
+Basic 3 Units:
+\begin{itemize}
+    \item Mass | M | kg
+    \item Length | L | m
+    \item Time | T | s
+\end{itemize}
+
+Units and Conversion
+
+Scientific Notation:
+Write each number so that the number is between 0 and 10 (Exclusive). Then, add $\times 10^n$, where n is the number of decimal points you moved.
+
+
+
+\section*{Uncertainty in Measurements}
+\begin{enumerate}
+    \item No physical quantity can be determined with complete accuracy
+    \item The accuracy of a measurement depends on:
+        \begin{enumerate}
+            \item The sensitivity of the apparatus
+            \item The skill of the person carrying out the measurement
+            \item Number of time the measurements carried out
+        \end{enumerate}
+\end{enumerate}
+\subsection*{Mean and Standard Deviation}
+If you make $N$ measurements of a physical quantity $A$\\
+The average $\overline{A}$ is the best estimation of the quantity and the standard deviation $\sigma_{A}$ is one way of expressing the uncertainty\\
+$\overline{A} = \sum_{i}\frac{A_{i}}{N}$\\
+$\sigma_{A} = \sqrt{\sum_{i}\frac{(\overline{A} - A)^2}{N-1}}$
+
+\begin{tabular}{|c|c|c|}
+    80&88&96
+\end{tabular}
+Average: 88\\ 
+St. Dev: 8
+
+
+\subsection*{Measuring a whiteboard:}
+\begin{tabular}{|c|c|}
+    \hline
+    $L_1$&$362.5 \pm 0.1$cm\\
+    $L_2$&$365.5 \pm 0.1$cm\\
+    $L_3$&$362 \pm 0.1$cm\\
+    $L_4$&$360.5\pm 0.1$ cm\\
+    $L_5$&$360.5\pm 0.1$ cm\\
+    $L_6$&$360.0\pm 0.1$ cm\\
+    $L_7$&$360.8\pm 0.1$ cm\\
+    $L_8$&$360.0\pm 0.1$ cm\\
+    $L_9$&$360.8\pm 0.1$ cm\\
+    $L_10$&$362.0\pm 0.1$ cm\\
+    $L_11$&$360.5\pm 0.1$ cm\\
+    $L_12$&$360.5\pm 0.1$ cm\\
+    $\overline{L}$&$363.\overline{3}$\\
+    $\sigma L$&$1.202$\\
+    \hline
+\end{tabular}
+\begin{tabular}{|c|c|}
+    \hline
+    $H_1$&$121.5 \pm 0.1$cm\\
+    $H_2$&$121 \pm 0.1$cm\\
+    $H_3$&$121 \pm 0.1$cm\\
+    $H_4$&$121 \pm 0.1$cm\\
+    $H_5$&$121 \pm 0.1$cm\\
+    $H_6$&$121 \pm 0.1$cm\\
+    $H_7$&$121 \pm 0.1$cm\\
+    $H_8$&$121 \pm 0.1$cm\\
+    $H_9$&$121 \pm 0.1$cm\\
+    $H_10$&$121 \pm 0.1$cm\\
+    $H_11$&$121 \pm 0.1$cm\\
+    $H_12$&$121 \pm 0.1$cm\\
+    $\overline{H}$&$121.1\overline{6}$\\
+    $\sigma H$&$0.471$\\
+    \hline
+\end{tabular}
+
+\subsection*{Significant Figures}
+When multiplying or dividing, keep the amount of significant figures the same as the number with the smallest amount of digits.
+
+\end{document}

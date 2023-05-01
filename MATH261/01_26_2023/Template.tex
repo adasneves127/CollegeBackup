@@ -1,0 +1,231 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{MATH261\\\large Dr. Vignon Oussa}
+\def\docAuthor{Alex Dasneves}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+\setcounter{section}{1}
+
+
+\begin{document}
+\maketitle
+
+Find the unit vector in the direction of $v = <\frac{1}{3},\frac{2}{3},\frac{-1}{3}>$
+\begin{equation*}
+    Ev = \frac{v}{\lVert v\rVert}v = \frac{v}{\sqrt{\frac{1}{9}+\frac{4}{9}+\frac{1}{9}}}<\frac{1}{3},\frac{2}{3},\frac{-1}{3}> = \sqrt{\frac{1}{9}+\frac{4}{9}+\frac{1}{9}}<\frac{1}{3},\frac{2}{3},\frac{-1}{3}> = \sqrt{\frac{9}{6}}<\frac{1}{3},\frac{2}{3},\frac{-1}{3}> = <\frac{\sqrt{6}}{6},\frac{\sqrt{6}}{3},-\frac{\sqrt{6}}{6}>
+\end{equation*}
+
+A weight hangs from 2 wires, Find T1, T2.
+\begin{equation*}
+    E_{T1} = <\cos 50^{\circ}, \sin 50^{\circ}>
+\end{equation*}
+\begin{equation*}
+    T_1 = \|T_1\|<\cos 50^{\circ}, \sin 50^{\circ}> = <\|T_1\|\cos 50^{\circ}, \|t_1\|\sin 50^{\circ}>
+\end{equation*}
+\begin{equation*}
+    E_{T2} = <\cos 32^{\circ}, \sin 32^{\circ}>
+\end{equation*}
+\begin{equation*}
+    E_{T2} = \|T_2\|<\cos 32^{\circ}, \sin 32^{\circ}> = <\|T_2\|\cos 32^{\circ}, \|t_2\|\sin 32^{\circ}>
+\end{equation*}
+
+Therefore, $T_1 + T_2 = 100j = 100<0,1> = <0, 100>$\\
+\begin{equation*}
+    <\|T_1\|\cos 50 + \|T_2\|\cos 32, \|T_1\|\sin 50 + \|T_2\|\sin 32> = <0, 100>
+\end{equation*}
+\begin{equation*}
+    \|T_1\|\cos 50 + \|T_2\|\cos 32 = 0
+\end{equation*}
+\begin{equation*}
+    \|T_1\| = -\frac{\|T_2\|\cos 32}{\cos 50}
+\end{equation*}
+\begin{equation*}
+\|T_1\|\sin 50 + \|T_2\|\sin 32 = 100
+\end{equation*}
+\begin{equation*}
+    \|T_2\|\frac{-\cos 32\sin 50}{\cos 50} + \|T_2\|\sin 32 = 100
+\end{equation*}
+
+\begin{equation*}
+\|T_2\|(-\frac{\cos 32\sin 50}{\cos 50} + \sin 32) = 100
+\end{equation*}
+
+\begin{equation*}
+\|T_2\| \cdot (-\frac{\cos 32 + \sin 32\cos 50}{\cos 50})
+\end{equation*}
+\begin{equation*}
+\|T_2\| = \frac{100\cos 50}{\sin 32\cos 50 -\cos 32\sin 50}
+\end{equation*}
+
+
+\section{Dot Product}
+Given $v, w \in \mathbb{R}^n$
+$v = <v_1, v_2, \cdots, v_n>$
+$w = <w_1, w_2, \cdots, w_n>$
+
+\begin{equation*}
+    v \cdot w = v_1w_1 + v_2w_2 + \cdots + v_nw_n
+\end{equation*}
+So, for example, if $v = <2, 3> and w = <1, 4>$\\
+Then: $v \cdot w = 2\cdot 1 + 3\cdot 4 = 2 + 12 = 14$
+
+Example 2:\\
+$v = <1, 2, 3>$ and $w = <-1, 3, 2>$\\
+$v \cdot w = 1\cdot -1 + 2\cdot 3 + 3\cdot 2 = -1 + 6 + 6 = 12$
+
+\subsection{Dot Product Properties}
+\begin{enumerate}
+    \item If you take the vector times itself, you get the magnitude squared.\\
+\begin{equation*}
+    v \cdot v = \lVert v \rVert^2
+\end{equation*}
+    \item $v \cdot w = w \cdot v$ (commutative)
+    \item $V \cdot (U + w) = v \cdot u + v \cdot w$
+    \item If $\lambda \in \mathbb{R}$, then $\lambda v \cdot w = \lambda (v \cdot w)$
+    \item If $\emptyset  * v = \emptyset$, where $\emptyset$ is the zero vector.
+\end{enumerate}
+
+\subsection{Proof}
+\begin{enumerate}
+    \item Write $v = <v_1, v_2, \cdots, v_n>$\\
+        $v \cdot v = <v_1, v_2, \cdots, v_n> * <v_1, v_2, \cdots, v_n>$\\
+        $v_1^2 + v_2^2 + \cdots + v_n^2 = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2} = \|v\|^2$
+    \item 
+        \item $v = <v_1, \cdots, v_n>$\\
+         $u = <u_1, \cdots, u_n>$\\
+         $w = <w_1, \cdots, w_n>$\\
+         $v \cdot (u + w) = <v_1, \cdots, v_n> * <u_1 + w_1, \cdots, u_n + w_n>$\\
+         $(v_1\cdot u_1 + \cdots v_n\cdot u_n) + (v_1\cdot w_1 + \cdots + v_n\cdots w_n)$\\
+         $v \cdot u + v \cdot w$
+         \item 
+\end{enumerate}
+
+\subsection{Dot Product and Angles}
+Let $v, w \in \mathbb{R}^n$\\
+$v * w = \|v\|\|w\|\cos\theta$\\
+Where $\theta$ is the smaller positive angle between v and w.\\
+
+\subsection{Law of Cosines}
+$c^2 = a^2 + b^2 - 2ab\cos\theta$\\
+Angle must be opposite the side you are trying to find.\\
+
+Apply law of cosines to a triangle:\\
+$\|w-v\|^2 = \|v\|^2 + \|w\|^2-2\|v\|\|w\|\cos\theta$\\
+$(w-v)(w-v) = w\cdot w - w\cdot v - v\cdot w + v\cdot v$\\
+$(w-v)(w-v) = \|w\|^2 - 2w\cdot v + \|v\|^2$\\
+$(w-v)(w-v) = \|w\|^2 - 2\|v\|\|w\|\cos\theta + \|v\|^2$\\
+$-2v\cdot w = -2\|v\|\|w\|\cos\theta$\\
+$v*w = \|v\|\|w\|\cos\theta$
+\\
+\textbf{Ex.} If thevector $v, w$ have lengths $4$ and $6$, and $\theta = \frac{\pi}{3}$, find $v*w$\\
+$v*w = \|v\|\|w\|\cos\frac{\pi}{3}$\\
+$v*w = 4\cdot 6\cdot\frac{1}{2} = 24 * \frac{1}{2} = 12$\\
+
+Assume that v, w are non-zero vectors.\\
+Then $\cos\theta = \frac{v\cdot w}{(\|v\|\|w\|)}$\\
+We can say that $\cos\theta \in [0, \pi]$.\\
+$\arccos(\cos\theta) = \arccos(\frac{v\cdot w}{(\|v\|\|w\|)})$\\
+$\theta = \arccos(\frac{v\cdot w}{(\|v\|\|w\|)})$\\
+\subsection{Why is this useful?}
+\textbf{Remark}\\
+If $v \cdot w = 0$, then $\theta = \frac{\pi}{2}$. Therefore, $v, w$ are orthagonal vectors\\
+If $v \cdot w$ is positive, then the angle between v and w is acute.\\
+If $v \cdot w$ is negative, then the angle between v and w is obtuse.\\
+
+\subsection*{More Examples}
+\begin{enumerate}
+    \item[] $v = <2, 2, -1>$ and $w = <5, -3, 2>$\\
+        $\theta = \arccos(\frac{v\cdot w}{(\|v\|\|w\|)})$\\
+        $= \arccos(\frac{2\cdot 5 + 2\cdot -3 + -1\cdot 2}{\sqrt{2^2 + 2^2 + -1^2}\sqrt{5^2 + -3^2 + 2^2}})$\\
+        $= \arccos(\frac{12 -6 + -2}{3 \sqrt{38}})$\\
+        $= \arccos(\frac{4}{3 \sqrt{38}})$\\
+        $= 84^{\circ}$\\
+    \item[] $v = <2,2,-1>, w=<5,-4,2>$\\
+    $\theta = \arccos(\frac{v\cdot w}{(\|v\|\|w\|)})$\\
+    $= \arccos(\frac{10 - 6 - 2}{\sqrt{9}*\sqrt{40}}) = 0$\\
+    
+\end{enumerate}
+
+\subsection{Direction Angles}
+Find the unique box sitting on the axis such that the vector $\overrightarrow{v}$ sits on the diagonal of the box.\\
+The angle between the x-axis and $\overrightarrow{v}$ is $\alpha$.\\
+The angle between the y-axis and $\overrightarrow{v}$ is $\beta$.\\
+The angle between the z-axis and $\overrightarrow{v}$ is $\gamma$.\\
+$\cos\alpha = \frac{v * i}{\|v\|}$\\
+$\cos\beta = \frac{v * j}{\|v\|}$\\
+$\cos\gamma = \frac{v * k}{\|v\|}$\\
+Therefore:\\
+$\alpha = \arccos(\frac{v * i}{\|v\|})$\\
+$\beta = \arccos(\frac{v * j}{\|v\|})$\\
+$\gamma = \arccos(\frac{v * k}{\|v\|})$\\
+
+If we write $v = <v_1, v_2, v_3>$, then:\\
+$i = <1, 0, 0>$\\
+Therefore: $v\cdot i = v_1$\\
+Therefore: $v\cdot j = v_2$\\
+Therefore: $v\cdot k = v_3$\\
+And therefore:\\
+$\alpha = \arccos(\frac{v_1}{\|v\|})$\\
+$\beta = \arccos(\frac{v_2}{\|v\|})$\\
+$\gamma = \arccos(\frac{v_3}{\|v\|})$\\
+
+\textbf{Ex.} Find the direction angles of: $v = <1,2,3>$:\\
+$\alpha = \arccos(\frac{1}{\sqrt{14}})$\\
+$\beta = \arccos(\frac{2}{\sqrt{14}})$\\
+$\gamma = \arccos(\frac{3}{\sqrt{14}})$\\
+
+\textit{Subtle Quote: There are 2 things that can change your mood: Jerks, and music.\\}
+\newpage
+\subsection{Projections}
+\begin{equation*}
+    proj_w V = (v\cdot e_w) * e_w
+\end{equation*}
+Since $proj_w v + orth_w v = v$
+\begin{equation*}
+    orth_w v = v - proj_w v
+\end{equation*}
+
+
+\section*{Homework on Dot Product}
+
+\subsection*{Solve the problem}
+\begin{enumerate}
+    \item Let $v = 6i + 8j$ and $w = 10i-9j$ Compute $v\cdot w$.\\
+    $v = <6,8>, w=<10,-9>$\\
+    $v\cdot w = v_1 \cdot w_1 + v_2 \cdot w_2 + \cdots + v_n \cdot w_n$\\
+    $v \cdot w = (6 \cdot 10) + (8 \cdot -9)$\\
+    $v \cdot w = (60) + (-72) = -12$
+    \item $r=\left\langle6,-8,1\right\rangle, v=\left\langle2,-9,6\right\rangle, w=\left\langle-9,-1,-3\right\rangle$ Find $(r+v)\cdot w$\\
+    $v \cdot (u + w) = v \cdot u + v \cdot w$, Therefore \\
+    $(r+v)\cdot w = (w \cdot r) + (w \cdot u)$\\
+    $(w \cdot r) = (6*-9+-8*-1+1*-3) = -49$\\
+    $(w \cdot u) = (2*-9+-9*-1+6*-3) = -27$\\
+    $(w \cdot r) + (w \cdot u) = -49+-27 = -76$
+    
+    \item Let $a = 3j + 2k$ and $b = j+k$. Find $\frac{a\cdot b}{\|a\|\|b\|}$\\
+    $a\cdot b = 3*1 + 2+1 = 3+2 = 5$\\
+    $\|a\| = \sqrt{3^2 + 2^2} = \sqrt{13}$\\
+    $\|b\| = \sqrt{1^2 + 1^2} = \sqrt{2}$\\
+    $\|a\|\|b\| = \sqrt{13}* \sqrt{2} = \sqrt{26}$\\
+    $\frac{a\cdot b}{\|a\|\|b\|} = \frac{5}{\sqrt{26}} \equiv \frac{5\sqrt{26}}{26}$
+    \item Find the angle between the given vectors to the nearest tenth of a degree:
+        $v = 3i + 5j, w=3i+4j$\\
+        $\theta = \arccos(\frac{v\cdot w}{(\|v\|\|w\|)})$\\
+        $= \arccos(\frac{3*3 + 5*4}{\sqrt{3^2+5^2}*\sqrt{3^2+4^2}})$\\
+        $= \arccos(\frac{3*3 + 5*4}{\sqrt{9+25}*\sqrt{9+16}})$\\
+        $= \arccos(\frac{3*3 + 5*4}{\sqrt{34}*\sqrt{25}})$\\
+        $= \arccos(\frac{3*3 + 5*4}{\sqrt{34}*\sqrt{25}})$\\
+        $= \arccos(\frac{9 + 20}{\sqrt{870}})$\\
+        $= \arccos(\frac{29}{\sqrt{870}})$\\
+        $= 0.98319208025 rad$\\
+    \item 
+    
+\end{enumerate}
+
+\end{document}

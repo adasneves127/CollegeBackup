@@ -1,0 +1,62 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section*{Linear Motion}
+\subsection*{Review}
+$$Average Velocity \equiv \frac{\Delta \vec{x}}{\Delta t}$$
+$$Instantaneous Velocity \equiv \frac{d \vec{x}}{d t}$$
+$$Average Acceleration \equiv \frac{\Delta \vec{v}}{\Delta t}$$
+$$Instantaneous Acceleration \equiv \frac{d \vec{v}}{t t} \equiv \frac{d^2\vec{x}}{dt^2}$$
+
+\textbf{Ex.} A particle is moving along the x axis according to the expression: $v_x=40-5t^2$.
+\begin{enumerate}
+    \item[a] Average Acceleraton: $\frac{20-40}{2-0} = \frac{-20}{2} = -10m/s^2$
+    \item[b] Instantaneous Acceleration at $t = 2.0$\\ Derivative: $-10t$, instantaneous accel: $-20m/s^2$
+\end{enumerate}
+
+\textbf{Partivle under Constant Acceleration}\\
+Let:\\
+$x_i = $ Initial Posiition\\
+$x_f = $ Final Position\\
+$\vec{v_i} = $ Initial Velocity\\
+$\vec{v_f} = $ Final Velocity\\
+$a = $ Acceleration \\
+4 Different Equations:
+\begin{equation*}
+    a = \frac{\Delta v}{\Delta t} = \frac{v_f-v_i}{t} \equiv at = v_f-v_i \equiv v_f=v_i+at
+\end{equation*}
+
+\begin{equation*}
+    v_{avg} = \frac{\Delta x}{\Delta t} \equiv \frac{v_i + v_f}{2} = \frac{x_f-x_i}{t} \equiv v_f-x_i = \frac{v_i+v_f}{2}t \equiv x_f = x_i+\frac{v_i+v_f}{2}t
+\end{equation*}
+
+\begin{equation*}
+    v_f = x_i+\frac{v_i+(v_i+at)}{2}t \equiv x_i + \frac{2v_i+at}{2}t = x_i+v_it+\frac{1}{2}at^2
+\end{equation*}
+
+\begin{equation*}
+x_f=x_i+\frac{v_i+v_f}{2}t \equiv x_f = \frac{x_i+v_i+v_f}{2}\frac{v_f-v_i}{a} \equiv (x_f-x_i) = \frac{(v_i+v_f)(v_f-v_i)}{2a} \equiv 2a\Delta x = v_f^2-v_i^2 = v_f^2=v_i^2+2a(\Delta x)
+\end{equation*}
+
+\textbf{Kinematic Equation}
+\begin{enumerate}
+    \item $v_f=v_i+at$ | Missing X
+    \item $x_f = x_i+\frac{v_i+v_f}{2}t$ | Missing a
+    \item $x_f=x_i+v_ot+\frac{1}{2}at^2$ | Missing $V_f$
+    \item $v_f^2=v_o^2+2a(\Delta x)$ | Missing t
+\end{enumerate}
+\end{document}

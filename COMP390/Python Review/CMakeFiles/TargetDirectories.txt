@@ -1,0 +1,2 @@
+/home/adasneves/Desktop/COMP390/Python Review/CMakeFiles/edit_cache.dir
+/home/adasneves/Desktop/COMP390/Python Review/CMakeFiles/rebuild_cache.dir

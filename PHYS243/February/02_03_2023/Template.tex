@@ -1,0 +1,53 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section*{Instantaneous Velocity vs Average Velocity}
+
+\begin{equation*}
+    \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}  
+\end{equation*}
+
+\begin{tabular}{c|c}
+    $t$&$x=-4t+2t^2$\\\hline
+    $0$ & $0$\\
+    $1$&$-4(1)+2(1^2) = -4+2 = -2$\\
+    $2$ & $0$\\
+    $3$ & $6$
+\end{tabular}\\
+\includegraphics*{Intantaneous1.png}
+
+Average Speed depends on when we measure from and to.\\
+Instantaneous does not. It only relies on the velocity at the exact moment.\\
+We can do this by taking a derivative.
+
+\section*{Acceleration}
+\begin{equation*}
+    a_{avg} \equiv \frac{\Delta v_x}{\Delta t} = \frac{v_f-v_i}{t_f-t_i}
+\end{equation*}
+
+\begin{equation*}
+    \vec{a_x} = \lim_{\Delta t \to 0} = \frac{\Delta V_x}{\Delta t} = \frac{dv_x}{dt} \equiv \frac{d}{dt}(\frac{dx}{dt})
+\end{equation*}
+\begin{equation*}
+    a_x = \frac{d^2x}{dt^2}
+\end{equation*}
+
+\newpage
+An object is only slowing down when it's acceleration is opposite it's velocity.\\
+An object whose acceleration is negative is speeding up if it's velocity is also negative.
+
+\end{document}

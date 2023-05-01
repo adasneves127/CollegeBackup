@@ -1,0 +1,78 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts, tikz, amsmath, amsthm, graphicx}
+
+\def\docTitle{PHYS 243}
+\def\docAuthor{Alex Dasneves}
+\date{}
+
+\title{\docTitle}
+\author{\docAuthor}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\textbf{Worksheet: 1D Problems}
+
+\begin{enumerate}
+	\item A car is moving at 12m/s when the driver steps on the breaks. The breaks apply a uniform deceleration equal to -5.2m/s. How much time does it take for the car to come to rest?\\
+	If the car is moving at 12m/s, and is slowing down at 5.2m/s, then:\\
+		$\frac{12m/s}{-5.2m/s^2} = 2.3$ seconds.\\
+	\item Find out how far the car tracels during this time. Do this using the time you just found.\\
+		If the car is decelerating at $5.2m/s^2$ for 2.3 seconds, then we can get the following equation for the car's position:\\
+		$$v_f=x_0+v_0t+\frac{1}{2}at^2 \equiv v_f=0+12*2.3 + \frac{1}{2}(-5.2)(2.3)^2 = 13.84$$
+	\item Compute the distance the car tracels in a different way, using only the initial and final speeds and not the time.\\
+		If we cannot use the time, then we must use the 4th equation of kinematics.\\
+		$$v_f^2=v_0^2+2a(\Delta x) \equiv v_f^2 = 12^2 + 2(-5.2)(\Delta x) \equiv \Delta x = \frac{12^2}{2*(5.2)} = 13.8$$
+	\item Suppose now that there is a barrier 11m in front of the car. How fast is the car going when it hits the barrier assuming the same initial speed and acceleration as above?\\
+		If the barrier is at 11m, then we can use the 4th equation.\\
+		$$v_f^2=v_0^2+2a(\Delta x) \equiv v_f^2 = 12^2+2(-5.2)(11) = 144-114.4 = 29.6 \equiv \sqrt{v_f^2} = \sqrt{29.6} = v_f = \sqrt{29.6} = 5.44m/s$$
+\end{enumerate}
+
+\textbf{NOTE:} The 4 kinematic equations are only useable under constant acceleration.
+
+\textbf{Example:} A jet lands on an aircraft carrier at a speed of 140 mi/hr (~ 63m/s).
+Variables:\\
+$v_i = 140mi/h\\v_f=0\\x_0=0$
+\begin{enumerate}
+	\item[a] What is it's acceleration (assumed constant) if it stops in 2.0 seconds due to an arresting cable that snags the jet and brings it to a stop?\\
+		$(A\rightarrow B) \rightarrow v_f=v_0+at \equiv 0=63 + a(2.0) \equiv 63 = a(2.0) \equiv \frac{140}{2} = a \equiv -31.5m/s^2$
+	\item[b] If the jet touches down at $x_i = 0$, what is it's final position?
+		$$(a\rightarrow b)\rightarrow x_f=x_0+\frac{v_f+v_0}{2}t \equiv x_f = 0+\frac{0+63}{2} \cdot 2.0$$\\
+		$$x_f = \frac{63}{2} \cdot 2.0 = 63$$\\
+		The airplane will stop $63$ meters after it touches down.
+\end{enumerate}
+\newpage
+If we have a car that accelerates at $5 m/s^2$ for 5 seconds, how long will it take to get to 200 m?\\
+Vars:\\
+$v_0 = 0\\
+a = 5m/s^2$
+
+Split this into smaller questions. 
+\begin{enumerate}
+	\item How fast will it take to get up to speed?\\
+	At point $B$, the car will be travelling at 25m/s. It will take 5 seconds to get there.
+	\item How far will it have traveled in that time?\\
+	By point C, we need to know how far we have travelled.\\
+	$$x_f = x_0+\frac{v_f+v_0}{2}t \equiv x_f = \frac{25 + 0}{2} 5 = 12.5 * 5 = 62.5m$$
+	At the end of acceleration, we will be 62.5 meters from the start.
+	\item How long will it take to travel the rest of the distance?\\
+	The remaining distance is: 137.5m. We are travelling at 25m/s.
+	$$x_f=x_0+v_0t+\frac{1}{2}at^2 = 200=62.5+25t+0 \equiv 137.5 = 25t \equiv 5.5s$$
+\end{enumerate}
+Therefore, the remaining 137.5 meters are traveled in 5.5 seconds.\\
+If we add together all the times, we get: $5.5 + 5 = 10.5s$\newpage
+
+A stone thrown from the top of a building is given an initial velocity of 20.0m/2 straight upward. The stone is launched 50.0m above the dround, and the stone just misses the edge of the roof on its way down.\\
+Vars:\\
+$T_A = 0$ (The time the stone leaves the throwers hand at position A).
+$V_iA = 20m/s$\\
+$A = -10m/s^2$\\
+$V_B = 0$ (The peak of the stone's height)\\
+
+
+\end{document}

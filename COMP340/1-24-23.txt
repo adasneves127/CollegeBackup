@@ -1,0 +1,95 @@
+1820: Gears with digits in Difference Engine
+	To give instructions, you change gears
+	Invented by Charles Babbage
+
+1945: Binary Code in electronic Computer
+	Electronic Computer understands 0s and 1s
+	Code with 0s and 1s
+
+     		Eniac -- Electronic Numerical Integrator and Computer
+			Cons:
+				Programming took about 2 weeks due to error checking of program
+				Hard to find error
+
+1949: Assembly Language
+	To give instructions
+		Use words (mnemonics) instead of 0 and 1
+			Example instructions: inp, sta, add, out, etc...
+		Assembler -> Converts from assembly to machine code
+
+	Cons: Machine Dependent
+		Different Computer Architecture <--> Different assembly language
+	Need to understand Computer Architecture
+
+
+1955: FLOW-MATIC
+	Developed by Grace Hopper
+	Business data processing language
+	Uses english-like instructions
+
+1957: Fortran
+	Invented by John Backus at IBM
+	First widespread compuled language
+	Used basic data types Str, Int, Bool, double
+	
+1958: LISP
+	Designed by John McCarthy at MID
+	First 'Functional' paradigmed programming language
+	If-else tree data, recursion
+	Print loop (akin to python)
+
+1958: Algol
+	ALGOrithmic Language
+	Structured Programming
+	Code blocks with begin and end pair
+	Influenced Pascal, C, C++
+
+1959: COBOL
+	Developed by a consortium of the US government and businesses
+	Business-oriented computer language
+	Based on FLOW-MATIC
+	Stull used in 2023
+
+1964: BASIC
+	Beginners All Purpose Symbolic Instruction Code
+	Developed by John G. Kemey and Thomas E. Kurtz at Dartmouth College
+	Educational language for non-science students
+
+1968: Pascal
+	Developed by Niklaus Wirth
+	Educational language to teach good programming practices
+	Based on many other languages
+	Replaced by C
+
+1972: C
+	Developed by Dennis Ritchie at Bell Labs
+	Used to rewrite UNIX
+	C Does not have automatic memory management (Garbage collector)
+	No Error Correction
+	Fast Performance
+	Easy to program
+
+1972: Smalltalk
+1972: Prolog -- Logic
+1973: ML -- Functional
+1975: Scheme -- Functional
+
+Enter: Object Oriented Programming
+	Manage program in terms of object
+	Break program into smaller pieces
+
+1983: C++ (C With Classes)
+	Developed by Bjarn Stroustrup
+	Extended C with Opject Oriented Programming
+	Still Very Widely Used
+
+1991: Python
+	Developed by Guido van Rossum
+	Started implementation as a hobby during the Christmas week in 1989
+	Simple, fast implementation speed
+1994: Java
+	Developed by James Gosling at SUN
+	Intended to run on interactive TV
+		Make programs fun on many machines
+	After ITV failed java changed to web
+	As web became popular, Java became popular
